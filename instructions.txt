@@ -1,0 +1,50 @@
+Battleships
+
+Paper and pencil games have been around forever. We all played tic-tac-toe as kids, trading X and O's 
+for hours. As we grew older, we moved on to hangman, and when we could find graph paper, we'd play 
+battleships. We'd draw two 10 by 10 squares, then mark numbers 1 to 10 along one side and letters A to 
+J on another. We'd mark X's on one grid representing our fleet then take turns calling out grid 
+coordinates to sink each other's ships. We'd use the other grid to track our shots, then go back and 
+forth, calling our shots, until we sunk our opponent's fleet. 
+
+For this last game, our Circuit Playground version of the battleship game will give you the feel of an old 
+mainframe computer game.  We'll connect a serial terminal program to our board and play using text 
+output and keyboard input. Since this book uses Circuit Playground boards, we'll use these, but the 
+battleship game can run on just about any microcontroller board that supports Circuit Python or micro 
+Python. You can even run it directly on your Windows or Mac computer from a command prompt. All 
+the code is standard Python.
+
+What You'll Need
+
+*	A circuit Playground Express or Bluefruit board,
+*	A computer,
+*	A USB cable,
+*	A terminal program like Terra Term for Windows or Serial for Mac ,
+*	The file code.py in this folder.
+
+Game Setup
+
+1.	Connect the Circuit Playground board to your computer using a USB cable.
+2.	Copy the file code.py into your Circuit Playground's flash memory.
+3.	Start your serial terminal program, select the serial port for your Circuit Playground board (9600 
+baud), then press the control key and the letter d to restart the board.
+4.	You should see the message 'Welcome to Battleships...'.
+5.	Type 'help' to see the help page or type new to start a game.
+
+
+Game Play
+
+1.	Type 'new' to start a new game. You'll see a blank ten by ten grid with numbers across the top 
+and letters along the sides. These are your grid coordinates.
+2.	Take your first shot by entering a grid coordinate such as 'B6' or 'J10' then press the 'enter' key.
+3.	You'll see a response indicating whether you hit or missed one of your opponent's ships as well 
+as a plot on the grid, asterisk (*) for a miss, 'O' for a hit.
+4.	When you hit a ship, fire at the coordinates near the square you hit to sink the ship.  
+5.	Continue until you sink all of your opponent's fleet.
+6.	When you sink the last ship, you'll see the number of shots it took to sink your opponent's fleet. 
+Keep track of this score and see how well you improve over time.
+7.	Enter 'exit' at any time to end a game.
+
+
+From the book 'Ten Games for the Circuit Playground Express' by Rick Leander.
+Go to https://www.amazon.com/author/rleander to see my book page. 
